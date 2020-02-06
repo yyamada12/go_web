@@ -17,7 +17,7 @@ func UserSignUp(ctx *gin.Context) {
 	println("password: " + password)
 	println("passwordConf: " + passwordConf)
 
-	ctx.Redirect(http.StatusSeeOther, "//localhost:8080/")
+	ctx.Redirect(http.StatusSeeOther, "/")
 }
 
 func UserLogIn(ctx *gin.Context) {
@@ -27,5 +27,5 @@ func UserLogIn(ctx *gin.Context) {
 	println("username: " + username)
 	println("password: " + password)
 
-	ctx.Redirect(http.StatusSeeOther, "//localhost:8080/")
+	ctx.Redirect(http.StatusSeeOther, "/")
 }
